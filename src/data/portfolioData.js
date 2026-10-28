@@ -26,7 +26,7 @@ export const personal = {
 
   // ✏️ Replace with your real photo path after adding to /src/assets/
   // e.g.  photo: "/src/assets/profile.jpg"
-  photo: '/src/assets/profile.jpg',
+  photo: '/profile.jpg',
 
   social: {
     github:   "https://github.com/mdimranuddin",
