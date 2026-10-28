@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global ─────────────────────────────────────────────── */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  @apply bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Scroll-animation utility ────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Section title underline ─────────────────────────────── */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: #3b82f6;
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+/* ── Skill bar fill animation ────────────────────────────── */
+.skill-bar-fill {
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Custom scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-slate-200 dark:bg-slate-800; }
+::-webkit-scrollbar-thumb { @apply bg-blue-500 rounded-full; }
+
+/* ── Gradient text utility ───────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Card hover lift ─────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  @apply shadow-xl;
+}
