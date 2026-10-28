@@ -3,7 +3,7 @@
 A fully responsive personal portfolio website built with React, Vite, and Tailwind CSS.
 
 ## 🔗 Live Demo
-[View Live Site](#)
+[View Live Site](https://mdimranuddin.vercel.app)
 
 ## 🛠️ Tech Stack
 - React 18 + Vite
