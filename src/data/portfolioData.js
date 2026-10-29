@@ -141,7 +141,7 @@ export const projects = [
     slug:        "bazar-dor",
     title:       "Bazar Dor — Grocery Price Tracker",
     tagline:     "Bangladeshi grocery prices, live and compared.",
-    image:       "https://placehold.co/600x360/1E293B/60a5fa?text=Bazar+Dor",  // ✏️ Replace with real screenshot
+    image:       "/bazar-dor.png",
     techStack:   ["Next.js", "TypeScript", "MongoDB", "BetterAuth", "Tailwind CSS", "Vercel"],
     description: `A live, full stack web application that tracks and compares daily grocery prices 
     across Bangladesh. Built to solve a real problem — helping everyday Bangladeshis navigate rising 
@@ -172,12 +172,12 @@ export const projects = [
     slug:        "ai-adaptive-honeypot",
     title:       "AI-Adaptive Honeypot",
     tagline:     "Predicting attackers before they strike.",
-    image:       "https://placehold.co/600x360/1E293B/a78bfa?text=AI+Honeypot",
+    image:       "/honeypot.png",
     techStack:   ["Python", "Docker", "Groq API", "Pydantic", "LLM"],
     description: `An open-source cybersecurity tool that deploys an adaptive honeypot to capture 
     and analyze attacker behavior, then uses LLM-based classification powered by Groq API 
     to predict the attacker's next actions. Fully containerized with Docker. MIT licensed.`,
-    liveLink:    null,
+    liveLink:    "https://mdimranuddin.github.io/ai-adaptive-honeypot/dashboard.html",
     repoLink:    "https://github.com/mdimranuddin/ai-adaptive-honeypot",
     features: [
       "Captures and logs real attacker interactions via a honeypot environment",
@@ -201,13 +201,13 @@ export const projects = [
     slug:        "dev-stack-builder",
     title:       "Dev Stack Builder",
     tagline:     "Explore, compare, and build your ideal tech stack.",
-    image:       "https://placehold.co/600x360/1E293B/34d399?text=Dev+Stack+Builder",
+    image:       "/devstack.png",
     techStack:   ["React", "TypeScript", "Vite", "Tailwind CSS", "JSON"],
     description: `A modern web application that helps developers explore, compare and build their 
     ideal technology stack. Browse and filter a curated library of developer tools and technologies, 
     then build and export a complete custom stack. Built with React, TypeScript and Vite for 
     fast performance.`,
-    liveLink:    null,   // ✏️ Add if deployed
+    liveLink:    "https://mdimranuddin.github.io/dev-stack-builder",
     repoLink:    "https://github.com/mdimranuddin/dev-stack-builder",
     features: [
       "Browse and filter a curated library of developer tools and technologies",
