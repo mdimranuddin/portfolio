@@ -43,7 +43,7 @@ export const about = {
   shipping real, deployed applications while still a student.`,
 
   workType: `I enjoy building full stack products that solve everyday problems. 
-  From a live grocery price tracker used by real people in Bangladesh, to an AI-powered cybersecurity 
+  From a live grocery price tracker built for everyday shoppers in Bangladesh, to an AI-powered cybersecurity 
   honeypot — I care about writing clean, modular code that is maintainable and scalable. 
   TypeScript is my daily driver, and I love working across the full stack from UI to database.`,
 
@@ -56,8 +56,7 @@ export const about = {
   ],
 
   personality: `I am self-driven, curious, and collaborative. I believe in learning by building — 
-  not just watching tutorials. I push commits daily, I take feedback seriously, and I am always 
-  looking for the next problem worth solving.`,
+  not just watching tutorials. I push commits regularly, I take feedback seriously, and I am always looking for the next problem worth solving.`,
 };
 
 // ── SKILLS ───────────────────────────────────────────────────────
@@ -127,8 +126,9 @@ export const experience = [
     location: "Dhaka, Bangladesh (Remote)",
     points: [
       "Developed and published AI-Adaptive Honeypot — MIT-licensed cybersecurity tool using Python, Docker and Groq API for LLM-based attacker behavior prediction.",
-      "Built and deployed Bazar Dor — a production full stack app in TypeScript and Next.js with 100+ GitHub commits.",
+      "Built and deployed Bazar Dor — a full stack grocery price tracker in TypeScript and Next.js, live on Vercel.",
       "Maintained active GitHub profile with 100+ contributions across TypeScript, JavaScript and Python repositories.",
+      "Built BookNook — a full-stack online library with a Next.js client, a JWT-protected Express API and MongoDB, deployed on Vercel.",
     ],
   },
 ];
@@ -191,7 +191,7 @@ export const projects = [
       "Tuning Groq API prompts to accurately classify different attack patterns.",
     ],
     improvements: [
-      "Add a real-time dashboard to visualize attack logs and predictions.",
+      "Add real-time updates and alerts to the dashboard for attack logs and predictions.",
       "Integrate with SIEM tools for enterprise-level deployment.",
       "Add support for multiple honeypot protocols beyond the current implementation.",
     ],
@@ -223,6 +223,35 @@ export const projects = [
       "Allow users to save and share their custom stacks via a unique URL.",
       "Add community voting on technology recommendations.",
       "Build a tech stack compatibility checker.",
+    ],
+  },
+  {
+    id: 4,                           // must be a new number, not used by other projects
+    slug:        "booknook",         // used in the URL: /project/booknook
+    title:       "BookNook",
+    tagline:     "📚 A small online library: add a book, borrow a book, return a book.",
+    image:       "/booknook.png",
+    techStack:   ["Next.js", "Express.js", "MongoDB", "BetterAuth", "JWT", "Tailwind CSS", "DaisyUI", "Framer Motion"],
+    description: `BookNook is a full-stack online library where readers share books and borrow them for 7 days. It solves the problem of tracking who has which book, with live copy counts and no double borrowing. It is built for small communities such as classrooms, clubs and friend groups.`,
+    liveLink:    "https://booknook-client-rho.vercel.app",
+    repoLink:    "https://github.com/mdimranuddin/booknook-client",
+    features: [
+      "Email and Google login with BetterAuth, plus private routes that bring users back to the page they wanted",
+      "Add, edit and delete books with image upload, and only the owner can change a book",
+      "Smart borrowing: copies go down and up automatically, \"Not Available\" at 0 copies, and no double borrow",
+      "Express API with 8 REST routes, where adding, editing, deleting and borrowing are protected by JWT",
+      "Dark and light mode, a floating 3D book hero, tilt cards and Framer Motion animations",
+    ],
+    challenges: [
+      "Connecting two separate apps securely: the Next.js session cookie does not reach the Express server, so I used a signed JWT and verified it on the server with the public keys",
+      "Google login failed with an account-not-linked error when the same email already existed, so I enabled account linking for trusted providers",
+      "Deploying two projects with many environment variables: I had to match the login URLs, Google redirect links and server settings on Vercel, and move the database to its own user so no secret was shared",
+    ],
+    improvements: [
+      "Add forgot-password and email verification",
+      "Add search, category filters and pagination on the All Books page",
+      "Add overdue reminders and a borrow history page",
+      "Add automated tests for the API routes",
     ],
   },
 ];

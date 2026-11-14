@@ -22,6 +22,7 @@ export default {
         'fade-up':   'fadeUp 0.6s ease-out forwards',
         'fade-in':   'fadeIn 0.5s ease-out forwards',
         'blink':     'blink 0.8s step-end infinite',
+        'bounce-slow': 'bounce 2.5s infinite',
       },
       keyframes: {
         fadeUp: {

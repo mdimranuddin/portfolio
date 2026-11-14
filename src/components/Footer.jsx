@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiFacebook, FiHeart } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiFacebook, FiHeart } from 'react-icons/fi'
 import { personal } from '../data/portfolioData'
 
 export default function Footer() {
@@ -7,7 +7,6 @@ export default function Footer() {
   const socials = [
     { href: personal.social.github,   icon: FiGithub,   label: 'GitHub'   },
     { href: personal.social.linkedin,  icon: FiLinkedin, label: 'LinkedIn' },
-    { href: personal.social.twitter,   icon: FiTwitter,  label: 'Twitter'  },
     { href: personal.social.facebook,  icon: FiFacebook, label: 'Facebook' },
   ]
 

@@ -26,7 +26,7 @@ export default function Contact() {
       href:  `mailto:${personal.email}`,
       color: 'blue',
     },
-    {
+    personal.phone && {
       icon: FiPhone,
       label: 'Phone',
       value: personal.phone,

@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiFacebook, FiDownload, FiArrowDown } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiFacebook, FiDownload, FiArrowDown } from 'react-icons/fi'
 import { personal } from '../data/portfolioData'
 import { useTypingEffect } from '../hooks/useTypingEffect'
 
